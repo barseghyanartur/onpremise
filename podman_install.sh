@@ -8,7 +8,7 @@ dcr="$dc run --rm"
 log_file="sentry_install_log-`date +'%Y-%m-%d_%H-%M-%S'`.txt"
 exec &> >(tee -a "$log_file")
 
-
+setfacl -Rb ~/.local/share/containers
 
 MIN_RAM=2400 # MB
 
