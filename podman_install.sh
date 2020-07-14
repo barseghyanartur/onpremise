@@ -182,7 +182,7 @@ echo ""
 echo "Building and tagging Docker images..."
 echo ""
 # Build the sentry onpremise image first as it is needed for the cron image
-$dc build web
+# $dc build web  # We need to build all services
 $dc build --pull-always
 echo ""
 echo "Docker images built."
